@@ -1,0 +1,58 @@
+.circular-chart {
+  display: block;
+  margin: 10px auto;
+  max-width: 80%;
+  max-height: 250px;
+  transform-origin: 50% 50%;
+  transform: rotate(-25deg);
+}
+
+.circle {
+  fill: none;
+  stroke-width: 5;
+  stroke-linecap: round;
+  transform-origin: 50% 50%;
+  animation: progress 1s ease-out forwards;
+  stroke-dasharray: 20, 100;
+  d: path('M18 2.0845 a 15.9155 15.9155 0 0 1 0 31.831 a 15.9155 15.9155 0 0 1 0 -31.831');
+}
+
+#purple{
+  stroke: #d540d8;
+  -webkit-transform: rotate(0deg);
+          transform: rotate(0deg);
+}
+#yellow{
+  stroke: #fbab18;
+
+   -webkit-transform: rotate(72deg);
+          transform: rotate(72deg);
+}
+#dark-blue{
+  stroke: #005073;
+  
+  -webkit-transform: rotate(144deg);
+          transform: rotate(144deg);
+}
+
+#light-blue{
+  stroke: #00bcea;
+  
+  -webkit-transform: rotate(216deg);
+          transform: rotate(216deg); 
+}
+#red{
+  stroke: #ff3e67;
+  
+  -webkit-transform: rotate(288deg);
+          transform: rotate(288deg); 
+}
+
+
+
+
+@keyframes progress {
+  0% {
+    stroke-dasharray: 0 100;
+  }
+}
